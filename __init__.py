@@ -1,3 +1,3 @@
 import os
-from leon_info import *
-from leon_os import *
+from Leon_FC.leon_info import *
+from Leon_FC.leon_os import *
