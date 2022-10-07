@@ -39,13 +39,11 @@ def dfs_showdir(f,path, depth):
         new_item = path + '/' + item
         if os.path.isdir(new_item):
             dfs_showdir(f,new_item, depth + 1)
-
-        
 def get_filetree(path):
     with open(os.path.join(path,'Leon-file_tree.txt'),"w+") as f:    #设置文件对象
         str_ = dfs_showdir(f,path, 0)
         
 
 if __name__ == '__main__':
-    get_filetree(r'D:\Leon-Coding\Leon-PublicPlacesManage-System')
+    pass
 
